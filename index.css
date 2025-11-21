@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'cyberspace';
+    src: url("resources/Cyberspace.otf");
+}
+
+html, body {
+    background: linear-gradient(0deg, #3b2e2d, #1a1212);
+	color: #000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    height: 100%;
+}
+p,ul,li,a{
+    font-family: 'Courier New';
+}
+h1{
+    font-family: cyberspace;
+    color:#1a1212;
+    font-size:40px;
+}
+#container {
+    width:90%;
+    margin:auto;
+    margin-top:20px
+}
+header {
+    background-color: #cfc8bc;
+    text-align:center;
+}
+nav {	
+	width:20%; 
+	float:right;
+    background-color: #cfc8bc;
+    border:#91817a solid 2px;
+}
+#content {
+    width:75%;
+    float: left;
+    background-color: #cfc8bc;
+    border:#91817a solid 2px;
+    padding:10px;
+}
+#title {
+    margin:0;
+}
+@media only screen and (max-width: 900px) {
+    nav {width:auto; height:50px; margin-bottom:30px}
+    nav ul li {display: inline-block; }
+    nav ul li:after {content: " |";}
+    #content {width: auto}
+ }
