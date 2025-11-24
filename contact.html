@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title>My Hobby</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="container">
+        <header>Video Games</header>
+        <br>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="rainworld.html">Rain World</a></li>
+                <li><a href="riskofrain.html">Risk of Rain</a></li>
+                <li><a href="contact.html">Submit a Game</a></li> <!-- dodanie pozycji w menu "Contact" -->
+            </ul>
+        </nav>
+        <div id="content">
+            <h1>> SUBMIT A GAME</h1>
+            <p>Please fill out the form below for a chance to have your game featured on the website.</p>
+            <section>
+                <form>
+                    <label for="email">Your email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="name">Name of the game:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="surname">Genre:</label><br>
+                    <input type="text" id="genre" name="genre"><br><br>
+                    <label for="release">When was your game released?</label><br>
+                    <input type="date" id="release" name="release"><br><br>
+                    <label for="rating">What's the rating for your game?</label><br>
+                    <input type="radio" id="html" name="rating" value="negative">
+                    <label for="negative">Negative</label>
+                    <input type="radio" id="css" name="rating" value="mixed">
+                    <label for="mixed">Mixed</label>
+                    <input type="radio" id="positive" name="rating" value="positive">
+                    <label for="positive">Positive</label><br><br>
+                    <label for="DLC">What platforms is your game on?</label><br>
+                    <input type="checkbox" id="PC" name="PC"><label for="PC">PC</label>
+                    <input type="checkbox" id="Mobile" name="Mobile"><label for="Mobile">Mobile</label>
+                    <input type="checkbox" id="Console" name="Console"><label for="Console">Console</label><br><br>
+                    <label for="DLC">Does your game have DLC?</label>
+                    <input type="checkbox" id="DLC" name="DLC"><br><br>
+                    <input type="reset"> <input type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

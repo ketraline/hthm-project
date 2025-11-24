@@ -1,0 +1,41 @@
+<catalog>
+    <game id="1">
+        <name>Rain World</name>
+        <image>resources/rainworld/icon.png</image>
+        <description>
+            Rain World is a 2017 survival-platform video game. It was released for PlayStation 4 and
+            Microsoft Windows in March 2017 and Nintendo Switch in December 2018. The player
+            controls a "slugcat" — an agile cat-like animal—that is tasked with survival in a
+            derelict and hostile world. The slugcat traverses through the remnants of an
+            industrialized ancient civilization as it searches for its family. It uses debris as
+            weapons to escape from lethal predators, scavenge for food, and reach safe hibernation
+            rooms before the deadly torrential rain arrives. Other game modes include multiplayer.
+            Beginning in 2011, Rain World was in development for over six years by a two-man team
+            and funded through Kickstarter, who intended to simulate a realistic ecosystem;
+            creatures act independently of the player and perpetually wander through the
+            environment. Rain World uses procedural animation and conveys much of its narrative
+            through environmental storytelling, adopting an adaptive low-fi and electronic
+            soundtrack. The player is given little explicit guidance so that they would feel like "a
+            rat that lives on subway tracks", learning to survive in an environment without
+            understanding its higher-level function.
+        </description>
+        <statistics>
+            <developer>Videocult</developer>
+            <publisher>Akupara Games</publisher>
+            <year>2017</year>
+            <score>94</score>
+            <dlc>Yes</dlc>
+        </statistics>
+        <gallery>
+            <image>resources/rainworld/screen1.png</image>
+            <image>resources/rainworld/screen2.png</image>
+            <image>resources/rainworld/screen3.png</image>
+            <image>resources/rainworld/screen4.png</image>
+            <image>resources/rainworld/screen5.png</image>
+        </gallery>
+    </game>
+    <game id="2">
+    </game>
+    <game id="3">
+    </game>
+</catalog>
