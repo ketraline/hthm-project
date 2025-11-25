@@ -3,13 +3,13 @@
     src: url("resources/Cyberspace.otf");
 }
 
-html,
-body {
+html, body {
     color: #010439;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    scrollbar-color: #38798d #070B53;
 }
 
 html {
@@ -17,21 +17,27 @@ html {
     background-attachment: fixed;
 }
 
-p,
-ul,
-li,
-a,
-table {
-    font-family: 'Courier New';
+h1, header {
+    font-family: cyberspace;
+    color: #010439;
+    font-size: 40px;
+    margin: 0;
 }
 
-table,
-tr,
-td,
-th {
-    border: 2px #9dbecc solid;
-    padding: 5px;
-    border-collapse: collapse;
+h2 {
+    font-family: cyberspace;
+    color: #172447;
+    font-size: 25px;
+    margin: 0;
+}
+
+h1::first-letter, h2::first-letter{
+    font-weight: bold;
+    color: #060c85;
+}
+
+p, ul, li, a, table {
+    font-family: 'Courier New';
 }
 
 a {
@@ -47,29 +53,64 @@ a:visited {
     color: #3C5794
 }
 
-h1,
-header {
-    font-family: cyberspace;
-    color: #010439;
-    font-size: 40px;
-    margin: 0;
+table, tr, td, th {
+    border: 2px #9dbecc solid;
+    padding: 5px;
+    border-collapse: collapse;
 }
 
-h2 {
-    font-family: cyberspace;
-    color: #172447;
-    font-size: 25px;
-    margin: 0;
+header {
+    background-color: #DCEDF3;
+    text-align: center;
+    border: #98C1DF solid 2px;
 }
 
 section {
     margin: 0;
 }
 
+nav {
+    width: 20%;
+    float: right;
+    background-color: #DCEDF3;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    border: #98C1DF solid 2px;
+    z-index:100;
+}
+
 .icon {
     width: 200px;
     float: right;
     margin-left: 10px;
+}
+
+.thumbnail{
+    width:200px;
+    margin:5px;
+    transform:scale(1,1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail:hover{
+    transform:scale(1.05,1.05);
+    animation: desaturate 0.2s ease-in-out both;
+}
+
+.characters{
+    border-radius:15px;
+    background-color: #98C1DF;
+    width:150px;
+    margin:5px;
+}
+
+.gallery{
+    display:inline-block;
+}
+
+.gallery p{
+    text-align:center;
 }
 
 .quote {
@@ -85,36 +126,10 @@ section {
     color: #3C5794;
 }
 
-#container {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-}
-
-header {
-    background-color: #DCEDF3;
-    text-align: center;
-    border: #98C1DF solid 2px;
-}
-
-nav {
-    width: 20%;
-    float: right;
-    background-color: #DCEDF3;
-    border: #98C1DF solid 2px;
-}
-
-#content {
-    width: 75%;
-    float: left;
-    background-color: #DCEDF3;
-    border: #98C1DF solid 2px;
-    padding: 10px;
-}
-
 .lightbox{
     text-decoration:none;
 }
+
 .lightbox-target {
     position: fixed;
     z-index: 800;
@@ -151,17 +166,6 @@ a.lightbox-close {
     left: 0;
     right: 0;
 }
-.thumbnail{
-    width:200px;
-    margin:5px;
-    transform:scale(1,1);
-    transition: transform 0.2s ease-in-out;
-}
-
-.thumbnail:hover{
-    transform:scale(1.1,1.1);
-    animation: desaturate 0.2s ease-in-out both;
-}
 
 .lightbox-target:target img {
     max-height: 80%;
@@ -172,20 +176,53 @@ a.lightbox-close {
 .lightbox-target:target a.lightbox-close {
     top: 0;
 }
-.gallery{
-    width:100%;
-    display:inline-block;
-    justify-content: center;
+
+#container {
+    width: 90%;
+    height:100%;
+    display:block;
+    margin: auto;
+    margin-top: 20px;
 }
-@media only screen and (max-width: 600px) {
+
+#content {
+    width: 75%;
+    float: left;
+    background-color: #DCEDF3;
+    border: #98C1DF solid 2px;
+    padding: 10px;
+}
+
+#goUp{
+    background-color:#070B53;
+    width:35px;
+    height:35px;
+    margin:auto;
+    align-items:center;
+    padding:5px;
+    border-radius:10px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:100;
+}
+
+@media only screen and (max-width: 630px) {
     nav {
         width: auto;
-        height: 50px;
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        position:static;
     }
 
     nav ul li {
         display: inline-block;
+    }
+
+    li::after{
+        content: " | ";;
+    }
+    li:last-child:after {
+        content: "";
     }
 
     .icon {
@@ -197,13 +234,27 @@ a.lightbox-close {
     .quote {
         margin: 0
     }
-    a.lightbox-close{width:40px;height:40px}
+
+    .gallery{
+        width:49%;
+    }
+
+    .thumbnail, .characters{
+        width:100%;
+        margin:0;
+    }
+    
+    .thumbnail:hover{
+        transform:scale(1.01,1.01);
+    }
+
+    a.lightbox-close{
+        width:40px;height:40px
+    }
 
     #content {
-        width: auto
-    }
-    .thumbnail{
-        width:100%;
+        width: auto;
+        height:auto;
     }
 }
 

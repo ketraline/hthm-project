@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
 	<link rel="stylesheet" href="index.css">
@@ -14,26 +14,44 @@
 		<br>
 		<nav>
 			<ul>
-				<li><a class="active" href="index.html">Home</a></li>
+				<li><a class="active" href="index.html"><b>Home</b></a></li>
 				<li><a href="rainworld.html">Rain World</a></li>
+                <li><a href="portal2.html">Portal 2</a></li>
 				<li><a href="riskofrain.html">Risk of Rain</a></li>
 				<li><a href="contact.html">Submit a Game</a></li> <!-- dodanie pozycji w menu "Contact" -->
 			</ul>
 		</nav>
+		<div id="goUp">
+			<a href="#title">
+				<svg width="33" height="33" fill="white" viewBox="0 0 15 15">
+					<path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
+				</svg>
+			</a>
+		</div>
 		<div id="content">
 			<h1>> HOME</h1>
 			<p>Welcome to my website where I talk about games! You can visit the articles I've created by clicking on
 				the tiles below or on the navigation bar.</p>
 			<section>
 				<h2>> FEATURED GAMES</h2>
-					<div style="text-align:center; justify-content:center; display:flex">
-						<div>
-							<img class="thumbnail" src="resources/rainworld/icon.png">
-							<p>Rain World</p>
+					<div>
+						<div class="gallery">
+							<a href="rainworld.html">
+							<img class="thumbnail" src="resources/rainworld/icon.png" alt="Rain World icon">
+							<p><b>Rain World</b></p>
+							</a>
 						</div>
-						<div>
-							<img class="thumbnail" src="resources/rainworld/icon.png">
-							<p>Rain World</p>
+						<div class="gallery">
+							<a href="portal2.html">
+							<img class="thumbnail" src="resources/portal2/icon.jpg" alt="Portal 2 icon">
+							<p><b>Portal 2</b></p>
+							</a>
+						</div>
+						<div class="gallery">
+							<a href="riskofrain.html">
+							<img class="thumbnail" src="resources/riskofrain/icon.jpg" alt="Risk of Rain 2 icon">
+							<p><b>Risk of Rain 2</b></p>
+							</a>
 						</div>
 					</div>
 					

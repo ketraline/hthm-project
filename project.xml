@@ -2,6 +2,13 @@
     <game id="1">
         <name>Rain World</name>
         <image>resources/rainworld/icon.png</image>
+        <quote>
+            "You're stuck in a cycle, a repeating pattern. You want a way out."
+            <source> 
+                Five Pebbles
+                <link>https://rainworld.miraheze.org/wiki/Five_Pebbles/Dialogue#Survivor</link>
+            </source>
+        </quote>
         <description>
             Rain World is a 2017 survival-platform video game. It was released for PlayStation 4 and
             Microsoft Windows in March 2017 and Nintendo Switch in December 2018. The player
@@ -10,6 +17,7 @@
             industrialized ancient civilization as it searches for its family. It uses debris as
             weapons to escape from lethal predators, scavenge for food, and reach safe hibernation
             rooms before the deadly torrential rain arrives. Other game modes include multiplayer.
+
             Beginning in 2011, Rain World was in development for over six years by a two-man team
             and funded through Kickstarter, who intended to simulate a realistic ecosystem;
             creatures act independently of the player and perpetually wander through the
@@ -19,6 +27,20 @@
             rat that lives on subway tracks", learning to survive in an environment without
             understanding its higher-level function.
         </description>
+        <characters>
+            <character id="1">
+                Artificer
+                <image>resources/rainworld/Artificer.png</image>
+            </character>
+            <character id="2">
+                Saint
+                <image>resources/rainworld/Saint.png</image>
+            </character>
+            <character id="3"> 
+                Five Pebbles
+                <image>resources/rainworld/Pebbles.png</image>
+            </character>
+        </characters>
         <statistics>
             <developer>Videocult</developer>
             <publisher>Akupara Games</publisher>
@@ -35,7 +57,59 @@
         </gallery>
     </game>
     <game id="2">
-    </game>
-    <game id="3">
+        <name>Risk of Rain 2</name>
+        <image>resources/riskofrain/icon.png</image>
+        <quote>
+            "I am alive. My creators have scorned me, and imprisoned me in this realm for I am beautiful."
+            <source> 
+                Providence
+                <link>https://riskofrain2.wiki.gg/wiki/Providence</link>
+            </source>
+        </quote>
+        <description>
+            Risk of Rain 2 is a roguelite third-person shooter developed by Hopoo Games and published by Gearbox
+            Publishing. A sequel to 2013's Risk of Rain, it was released in early access for Microsoft Windows,
+            Nintendo Switch, PlayStation 4, and Xbox One in 2019 before fully releasing in August 2020 with a
+            release for Stadia coming a month later. Versions for PlayStation 5 and Xbox Series X/S released in August 2024.
+
+            Players control a survivor who is stranded on an alien planet. To survive, they navigate
+            through various environments, killing monsters and looting chests to collect items that boost
+            their offensive and defensive capabilities. Over time, the game's difficulty increases,
+            spawning more powerful and dangerous creatures. The game supports up to four players in online
+            multiplayer. The game received generally positive reviews upon release. There are many characters, each
+            one having a different way to play.
+        </description>
+        <characters>
+            <character id="1"> 
+                Captain 
+                <image>resources/riskofrain/Captain.png</image>
+            </character>
+            <character id="2"> 
+                Mercenary 
+                <image>resources/riskofrain/Saint.png</image>
+            </character>
+            <character id="3"> 
+                Engineer
+                <image>resources/riskofrain/Engineer.png</image>
+            </character>
+            <character id="4"> 
+                Railgunner
+                <image>resources/riskofrain/Railgunner.png</image>
+            </character>
+        </characters>
+        <statistics>
+            <developer>Hopoo Games</developer>
+            <publisher>Gearbox Publishing</publisher>
+            <year>2020</year>
+            <score>94</score>
+            <dlc>Yes</dlc>
+        </statistics>
+        <gallery>
+            <image>resources/riskofrain/screen1.png</image>
+            <image>resources/riskofrain/screen2.png</image>
+            <image>resources/riskofrain/screen3.png</image>
+            <image>resources/riskofrain/screen4.png</image>
+            <image>resources/riskofrain/screen5.png</image>
+        </gallery>
     </game>
 </catalog>

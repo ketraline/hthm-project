@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
 	<link rel="stylesheet" href="index.css">
@@ -14,35 +14,64 @@
 		<br>
 		<nav>
 			<ul>
-				<li><a class="active" href="index.html">About</a></li>
-				<li><a href="rainworld.html">Rain World</a></li>
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="rainworld.html"><b>Rain World</b></a></li>
+                <li><a href="portal2.html">Portal 2</a></li>
 				<li><a href="riskofrain.html">Risk of Rain</a></li>
 				<li><a href="contact.html">Submit a Game</a></li> <!-- dodanie pozycji w menu "Contact" -->
 			</ul>
 		</nav>
+		<div id="goUp">
+			<a href="#title">
+				<svg width="33" height="33" fill="white" viewBox="0 0 15 15">
+					<path fill-rule="evenodd"
+						d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
+				</svg>
+			</a>
+		</div>
 		<div id="content">
 			<section>
-				<h1>> Rain World</h1>
-				<p class="quote">"You're stuck in a cycle, a repeating pattern. You want a way out." — <a
-						href="https://rainworld.miraheze.org/wiki/Five_Pebbles/Dialogue#Survivor">Five Pebbles</a></p>
+				<h1 id="title">> Rain World</h1>
+				<p class="quote">"You're stuck in a cycle, a repeating pattern. You want a way out." — <a target="_blank" href="https://rainworld.miraheze.org/wiki/Five_Pebbles/Dialogue#Survivor">Five Pebbles</a></p>
 				<p>
-					<img class="icon" src="resources/rainworld/icon.png">
+					<img class="icon" src="resources/rainworld/icon.png" alt="Rain World icon">
 					Rain World is a 2017 survival-platform video game. It was released for PlayStation 4 and Microsoft
 					Windows in March 2017 and Nintendo Switch in December 2018. The player controls a "slugcat" — an
 					agile cat-like animal—that is tasked with survival in a derelict and hostile world. The slugcat
 					traverses through the remnants of an industrialized ancient civilization as it searches for its
 					family. It uses debris as weapons to escape from lethal predators, scavenge for food, and reach safe
 					hibernation rooms before the deadly torrential rain arrives. Other game modes include
-					multiplayer.<br>Beginning in 2011, Rain World was in development for over six years by a two-man
+					multiplayer.
+					<br>
+					Beginning in 2011, Rain World was in development for over six years by a two-man
 					team and funded through Kickstarter, who intended to simulate a realistic ecosystem; creatures act
 					independently of the player and perpetually wander through the environment. Rain World uses
 					procedural animation and conveys much of its narrative through environmental storytelling, adopting
 					an adaptive low-fi and electronic soundtrack. The player is given little explicit guidance so that
 					they would feel like "a rat that lives on subway tracks", learning to survive in an environment
 					without understanding its higher-level function.
-					<span class="footnote">Quoted from the Wikipedia article.</span>
+					<a class="footnote" target="_blank" href="https://en.wikipedia.org/wiki/Rain_World">Quoted from the Wikipedia article.</a>
 				</p>
-				<h2>Statistics:</h2>
+			</section>
+			<section>
+				<h2>> Favorite Characters:</h2>
+				<div>
+					<div class="gallery">
+						<img class="characters" src="resources/rainworld/Artificer.png" alt="Image of Artificer">
+						<p>Artificer</p>
+					</div>
+					<div class="gallery">
+						<img class="characters" src="resources/rainworld/Saint.png" alt="Image of Saint">
+						<p>Saint</p>
+					</div>
+					<div class="gallery">
+						<img class="characters" src="resources/rainworld/Pebbles.png" alt="Image of Five Pebbles">
+						<p>Five Pebbles</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>> Statistics:</h2>
 				<table>
 					<tr>
 						<th>
@@ -70,8 +99,8 @@
 					</tr>
 					<tr>
 						<th>
-							<a href="https://store.steampowered.com/app/312520/Rain_World/#app_reviews_hash">Steam
-								Review Score</a>
+							<a target="_blank"
+								href="https://store.steampowered.com/app/312520/Rain_World/#app_reviews_hash">Steam Review Score</a>
 						</th>
 						<td>
 							94
@@ -86,42 +115,44 @@
 						</td>
 					</tr>
 				</table>
-				<br>
-				<h2 id="screenshots">Screenshots:</h2>
-				<div class="gallery">
+			</section>
+			<br>
+			<section>
+				<h2>> Screenshots:</h2>
+				<div>
 					<a class="lightbox" href="#screen1">
-						<img class="thumbnail" src="resources/rainworld/screen1.jpg">
+						<img class="thumbnail" src="resources/rainworld/screen1.jpg" alt="Thumbnail of a screenshot of the game">
 					</a>
 					<div class="lightbox-target" id="screen1">
-						<img src="resources/rainworld/screen1.jpg">
+						<img src="resources/rainworld/screen1.jpg" alt="Screenshot of the game">
 						<a class="lightbox-close" href="#screenshots"></a>
 					</div>
 					<a class="lightbox" href="#screen2">
-						<img class="thumbnail" src="resources/rainworld/screen2.jpg">
+						<img class="thumbnail" src="resources/rainworld/screen2.jpg" alt="Thumbnail of a screenshot of the game">
 					</a>
 					<div class="lightbox-target" id="screen2">
-						<img src="resources/rainworld/screen2.jpg">
+						<img src="resources/rainworld/screen2.jpg" alt="Screenshot of the game">
 						<a class="lightbox-close" href="#screenshots"></a>
 					</div>
 					<a class="lightbox" href="#screen3">
-						<img class="thumbnail" src="resources/rainworld/screen3.jpg">
+						<img class="thumbnail" src="resources/rainworld/screen3.jpg" alt="Thumbnail of a screenshot of the game">
 					</a>
 					<div class="lightbox-target" id="screen3">
-						<img src="resources/rainworld/screen3.jpg">
+						<img src="resources/rainworld/screen3.jpg" alt="Screenshot of the game">
 						<a class="lightbox-close" href="#screenshots"></a>
 					</div>
 					<a class="lightbox" href="#screen4">
-						<img class="thumbnail" src="resources/rainworld/screen4.jpg">
+						<img class="thumbnail" src="resources/rainworld/screen4.jpg" alt="Thumbnail of a screenshot of the game">
 					</a>
 					<div class="lightbox-target" id="screen4">
-						<img src="resources/rainworld/screen4.jpg">
+						<img src="resources/rainworld/screen4.jpg" alt="Screenshot of the game">
 						<a class="lightbox-close" href="#screenshots"></a>
 					</div>
 					<a class="lightbox" href="#screen5">
-						<img class="thumbnail" src="resources/rainworld/screen5.jpg">
+						<img class="thumbnail" src="resources/rainworld/screen5.jpg" alt="Thumbnail of a screenshot of the game">
 					</a>
 					<div class="lightbox-target" id="screen5">
-						<img src="resources/rainworld/screen5.jpg">
+						<img src="resources/rainworld/screen5.jpg" alt="Screenshot of the game">
 						<a class="lightbox-close" href="#screenshots"></a>
 					</div>
 				</div>
