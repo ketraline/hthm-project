@@ -126,6 +126,12 @@ nav {
     color: #3C5794;
 }
 
+.tags {
+    font-size:12px;
+    margin:0 0 10px 0;
+    color: #3C5794;
+}
+
 .lightbox{
     text-decoration:none;
 }
