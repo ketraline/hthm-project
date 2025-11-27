@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified"
+    elementFormDefault="qualified">
     <xs:element name="catalog">
         <xs:complexType>
             <xs:sequence>
@@ -8,12 +9,17 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:element name="image">
+
+    </xs:element>
+    <xs:element name="link" type="linkType" />
+
     <xs:complexType name="gameType">
         <xs:sequence>
             <xs:element name="name" type="shortString" />
             <xs:element name="tags" type="tagsType" />
             <xs:element name="quote" type="tagsType" />
-            <xs:element name="image" type="tagsType" />
+            <xs:element ref="image" />
             <xs:element name="description" type="tagsType" />
             <xs:element name="statistics" type="tagsType" />
             <xs:element name="gallery" type="tagsType" />
@@ -24,6 +30,64 @@
     <xs:simpleType name="tagsType">
         <xs:list itemType="xs:string" />
     </xs:simpleType>
+
+    <xs:complexType name="statisticsType">
+        <xs:all>
+            <xs:element name="developer" />
+            <xs:element name="publisher" />
+            <xs:element name="date" />
+            <xs:element name="score" />
+            <xs:element name="dlc">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="Yes|No"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="dlclist" type="dlclistType" minOccurs="0" maxOccurs="1" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="dlclistType">
+        <xs:sequence>
+            <xs:element name="title" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="date">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minInclusive value="2000" />
+                                <xs:maxInclusive value="2025" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="galleryType">
+        <xs:sequence>
+            <xs:element ref="image" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="linkType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="source" type="xs:string" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:attribute name="format">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="YYYY/MM/DD" />
+                <xs:enumeration value="MM/DD/YYYY" />
+                <xs:enumeration value="DD/MM/YYYY" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
 
     <xs:simpleType name="shortString">
         <xs:restriction base="xs:string">

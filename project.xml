@@ -8,7 +8,7 @@
             "You're stuck in a cycle, a repeating pattern. You want a way out."
             <link source="https://rainworld.miraheze.org/wiki/Five_Pebbles/Dialogue#Survivor">Five Pebbles</link>
         </quote>
-        <image type="gameicon" source="resources/rainworld/icon.png"></image>
+        <image source="resources/rainworld/icon.png"></image>
         <description>
             Rain World is a 2017 survival-platform video game. It was released for PlayStation 4 and
             Microsoft Windows in March 2017 and Nintendo Switch in December 2018. The player
@@ -30,13 +30,13 @@
         </description>
         <characters>
             <character name="Artificer">
-                <image type="charactericon" source="resources/rainworld/Artificer.png">Image of Artificer</image>
+                <image source="resources/rainworld/Artificer.png">Image of Artificer</image>
             </character>
             <character name="Saint">
-                <image type="charactericon" source="resources/rainworld/Saint.png">Image of Saint</image>
+                <image source="resources/rainworld/Saint.png">Image of Saint</image>
             </character>
             <character name="Five Pebbles">
-                <image type="charactericon" source="resources/rainworld/Pebbles.png">Image of Five Pebbles</image>
+                <image source="resources/rainworld/Pebbles.png">Image of Five Pebbles</image>
             </character>
         </characters>
         <statistics>
@@ -45,13 +45,17 @@
             <date format="YYYY-MM-DD">2017-03-28</date>
             <score>94</score>
             <dlc>Yes</dlc>
+            <dlcList>
+                <title date="2023">Rain World: Downpour</title>
+                <title date="2025">Rain World: The Watcher</title>
+            </dlcList>
         </statistics>
         <gallery>
-            <image type="screenshot" source="resources/rainworld/screen1.png">Screenshot of the game</image>
-            <image type="screenshot" source="resources/rainworld/screen2.png">Screenshot of the game</image>
-            <image type="screenshot" source="resources/rainworld/screen3.png">Screenshot of the game</image>
-            <image type="screenshot" source="resources/rainworld/screen4.png">Screenshot of the game</image>
-            <image type="screenshot" source="resources/rainworld/screen5.png">Screenshot of the game</image>
+            <image source="resources/rainworld/screen1.png">Screenshot of the game</image>
+            <image source="resources/rainworld/screen2.png">Screenshot of the game</image>
+            <image source="resources/rainworld/screen3.png">Screenshot of the game</image>
+            <image source="resources/rainworld/screen4.png">Screenshot of the game</image>
+            <image source="resources/rainworld/screen5.png">Screenshot of the game</image>
         </gallery>
     </game>
     <game id="2">
@@ -61,7 +65,7 @@
             "Oh, hi. So, how are you holding up? Because I'm a potato!"
             <link source="https://en.wikiquote.org/wiki/Portal_2#GLaDOS">GLaDOS</link>
         </quote>
-        <image type="gameicon" source="resources/rainworld/icon.png"></image>
+        <image source="resources/rainworld/icon.png"></image>
         <description>
             Portal 2 is a 2011 puzzle-platform game developed by Valve for Windows, macOS, Linux, PlayStation 3, and Xbox 360. 
             The digital PC versions are distributed online by Valve's Steam service, 
@@ -79,10 +83,10 @@
         </description>
         <characters>
             <character name="GLaDOS">
-                <image type="charactericon" source="resources/portal2/GLaDOS.png">Image of GLaDOS</image>
+                <image source="resources/portal2/GLaDOS.png">Image of GLaDOS</image>
             </character>
             <character name="Wheatley">
-                <image type="charactericon" source="resources/portal2/Wheatley.png">Image of Wheatley</image>
+                <image source="resources/portal2/Wheatley.png">Image of Wheatley</image>
             </character>
         </characters>
         <statistics>
@@ -93,11 +97,11 @@
             <dlc>No</dlc>
         </statistics>
         <gallery>
-            <image type="screenshot" source="resources/portal2/screen1.jpg">Screenshot of the game</image>
-            <image type="screenshot" source="resources/portal2/screen2.jpg">Screenshot of the game</image>
-            <image type="screenshot" source="resources/portal2/screen3.jpg">Screenshot of the game</image>
-            <image type="screenshot" source="resources/portal2/screen4.jpg">Screenshot of the game</image>
-            <image type="screenshot" source="resources/portal2/screen5.jpg">Screenshot of the game</image>
+            <image source="resources/portal2/screen1.jpg">Screenshot of the game</image>
+            <image source="resources/portal2/screen2.jpg">Screenshot of the game</image>
+            <image source="resources/portal2/screen3.jpg">Screenshot of the game</image>
+            <image source="resources/portal2/screen4.jpg">Screenshot of the game</image>
+            <image source="resources/portal2/screen5.jpg">Screenshot of the game</image>
         </gallery>
     </game>
     <game id="3">
@@ -107,7 +111,7 @@
             "I am alive. My creators have scorned me, and imprisoned me in this realm for I am beautiful."
             <link source="https://riskofrain2.wiki.gg/wiki/Providence">Providence</link>
         </quote>
-        <image type="gameicon" source="resources/riskofrain/icon.png"></image>
+        <image source="resources/riskofrain/icon.png"></image>
         <description>
             Risk of Rain 2 is a roguelite third-person shooter developed by Hopoo Games and published by Gearbox
             Publishing. A sequel to 2013's Risk of Rain, it was released in early access for Microsoft Windows,
@@ -124,16 +128,16 @@
         </description>
         <characters>
             <character name="Captain">
-                <image type="charactericon" source="resources/riskofrain/Captain.png"></image>
+                <image source="resources/riskofrain/Captain.png"></image>
             </character>
             <character name="Mercenary">
-                <image type="charactericon" source="resources/riskofrain/Saint.png"></image>
+                <image source="resources/riskofrain/Saint.png"></image>
             </character>
             <character name="Engineer">
-                <image type="charactericon" source="resources/riskofrain/Engineer.png"></image>
+                <image source="resources/riskofrain/Engineer.png"></image>
             </character>
             <character name="Railgunner">
-                <image type="charactericon" source="resources/riskofrain/Railgunner.png"></image>
+                <image source="resources/riskofrain/Railgunner.png"></image>
             </character>
         </characters>
         <statistics>
@@ -142,14 +146,18 @@
             <date format="YYYY-MM-DD">2020-08-11</date>
             <score>94</score>
             <dlc>Yes</dlc>
-            <dlcdates>2022 2024 2025</dlcdates>
+            <dlcList>
+                <title date="2022">Risk of Rain 2: Survivors of the Void</title>
+                <title date="2024">Risk of Rain 2: Seekers of the Storm</title>
+                <title date="2025">Risk of Rain 2: Alloyed Collective</title>
+            </dlcList>
         </statistics>
         <gallery>
-            <image type="screenshot" source="resources/riskofrain/screen1.png">Screenshot of the game</image>
-            <image type="screenshot" source="resources/riskofrain/screen2.png">Screenshot of the game</image>
-            <image type="screenshot" source="resources/riskofrain/screen3.png">Screenshot of the game</image>
-            <image type="screenshot" source="resources/riskofrain/screen4.png">Screenshot of the game</image>
-            <image type="screenshot" source="resources/riskofrain/screen5.png">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen1.png">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen2.png">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen3.png">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen4.png">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen5.png">Screenshot of the game</image>
         </gallery>
     </game>
 </catalog>
