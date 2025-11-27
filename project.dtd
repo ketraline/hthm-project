@@ -1,0 +1,31 @@
+<!ELEMENT catalog (game+)>
+<!ATTLIST catalog xmlns:xsi CDATA #REQUIRED>
+<!ATTLIST catalog xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+<!ELEMENT game (name,tags,quote,image,description,characters,statistics,gallery)>
+<!ATTLIST game id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT tags (#PCDATA)>
+<!ELEMENT quote (#PCDATA | link)*> 
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link source CDATA #REQUIRED>
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image source CDATA #REQUIRED>
+<!ELEMENT description (#PCDATA | link)*>
+
+<!ELEMENT characters (character+)>
+<!ELEMENT character (image)>
+<!ATTLIST character name CDATA #REQUIRED>
+
+<!ELEMENT statistics (developer, publisher, date, score, dlc, dlcList*)>
+<!ELEMENT developer (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date format CDATA #REQUIRED>
+<!ELEMENT score (#PCDATA)>
+<!ELEMENT dlc (#PCDATA)>
+<!ATTLIST dlc isPresent (Yes|No) #REQUIRED>
+<!ELEMENT dlcList (title+)>
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title date CDATA "Placeholder">
+
+<!ELEMENT gallery (image+)>

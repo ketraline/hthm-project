@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="HiH.xslt"?>
-<catalog>
+<!DOCTYPE catalog SYSTEM "project.dtd">
+
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project.xsd">
     <game id="1">
         <name>Rain World</name>
         <tags>Exploration Survival Indie</tags>
@@ -42,9 +43,9 @@
         <statistics>
             <developer>Videocult</developer>
             <publisher>Akupara Games</publisher>
-            <date format="YYYY-MM-DD">2017-03-28</date>
+            <date format="YYYY/MM/DD">2017-03-28</date>
             <score>94</score>
-            <dlc>Yes</dlc>
+            <dlc isPresent="Yes" />
             <dlcList>
                 <title date="2023">Rain World: Downpour</title>
                 <title date="2025">Rain World: The Watcher</title>
@@ -92,9 +93,9 @@
         <statistics>
             <developer>Valve</developer>
             <publisher>Valve</publisher>
-            <date format="YYYY-MM-DD">2011-04-18</date>
+            <date format="YYYY/MM/DD">2011-04-18</date>
             <score>98</score>
-            <dlc>No</dlc>
+            <dlc isPresent="No" />
         </statistics>
         <gallery>
             <image source="resources/portal2/screen1.jpg">Screenshot of the game</image>
@@ -143,9 +144,9 @@
         <statistics>
             <developer>Hopoo Games</developer>
             <publisher>Gearbox Publishing</publisher>
-            <date format="YYYY-MM-DD">2020-08-11</date>
+            <date format="YYYY/MM/DD">2020-08-11</date>
             <score>94</score>
-            <dlc>Yes</dlc>
+            <dlc isPresent="Yes" />
             <dlcList>
                 <title date="2022">Risk of Rain 2: Survivors of the Void</title>
                 <title date="2024">Risk of Rain 2: Seekers of the Storm</title>

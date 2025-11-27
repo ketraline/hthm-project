@@ -1,67 +1,46 @@
-<?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified"
-    elementFormDefault="qualified">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     <xs:element name="catalog">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="game" type="gameType" />
+                <xs:element ref="game" maxOccurs="unbounded" minOccurs="0" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="image">
-
+    <xs:element name="game">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="shortString" />
+                <xs:element name="tags" type="tagsType" />
+                <xs:element name="quote" type="textType" />
+                <xs:element ref="image" />
+                <xs:element name="description" type="textType" />
+                <xs:element name="characters" type="charactersType" />
+                <xs:element name="statistics" type="statisticsType" />
+                <xs:element name="gallery" type="galleryType" />
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id" use="optional" />
+        </xs:complexType>
     </xs:element>
-    <xs:element name="link" type="linkType" />
 
-    <xs:complexType name="gameType">
-        <xs:sequence>
-            <xs:element name="name" type="shortString" />
-            <xs:element name="tags" type="tagsType" />
-            <xs:element name="quote" type="tagsType" />
-            <xs:element ref="image" />
-            <xs:element name="description" type="tagsType" />
-            <xs:element name="statistics" type="tagsType" />
-            <xs:element name="gallery" type="tagsType" />
-        </xs:sequence>
-        <xs:attribute name="id" type="xs:integer"></xs:attribute>
-    </xs:complexType>
+    <xs:element name="link" type="linkType" />
+    <xs:element name="image" type="imageType" />
 
     <xs:simpleType name="tagsType">
+        <xs:restriction base="listType">
+            <xs:length value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="listType">
         <xs:list itemType="xs:string" />
     </xs:simpleType>
 
-    <xs:complexType name="statisticsType">
-        <xs:all>
-            <xs:element name="developer" />
-            <xs:element name="publisher" />
-            <xs:element name="date" />
-            <xs:element name="score" />
-            <xs:element name="dlc">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:pattern value="Yes|No"></xs:pattern>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="dlclist" type="dlclistType" minOccurs="0" maxOccurs="1" />
-        </xs:all>
-    </xs:complexType>
-
-    <xs:complexType name="dlclistType">
+    <xs:complexType name="textType" mixed="true">
         <xs:sequence>
-            <xs:element name="title" minOccurs="1" maxOccurs="unbounded">
-                <xs:complexType>
-                    <xs:attribute name="date">
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer">
-                                <xs:minInclusive value="2000" />
-                                <xs:maxInclusive value="2025" />
-                            </xs:restriction>
-                        </xs:simpleType>
-                    </xs:attribute>
-                </xs:complexType>
-            </xs:element>
+            <xs:element ref="link" />
         </xs:sequence>
     </xs:complexType>
 
@@ -74,25 +53,107 @@
     <xs:complexType name="linkType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
-                <xs:attribute name="source" type="xs:string" />
+                <xs:attribute ref="source" use="required" />
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
 
-    <xs:attribute name="format">
-        <xs:simpleType>
-            <xs:restriction base="xs:string">
-                <xs:enumeration value="YYYY/MM/DD" />
-                <xs:enumeration value="MM/DD/YYYY" />
-                <xs:enumeration value="DD/MM/YYYY" />
-            </xs:restriction>
-        </xs:simpleType>
-    </xs:attribute>
+    <xs:complexType name="imageType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="source" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:attribute type="xs:string" name="source" />
+
+    <xs:complexType name="charactersType">
+        <xs:sequence>
+            <xs:element name="character" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="image" />
+                    </xs:sequence>
+                    <xs:attribute type="xs:string" name="name" use="optional" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="statisticsType">
+        <xs:all>
+            <xs:element name="developer" type="shortString" />
+            <xs:element name="publisher" type="shortString" />
+            <xs:element name="date">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:date">
+                            <xs:attribute name="format" type="formatType" use="optional" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="score" type="xs:integer" />
+            <xs:element name="dlc">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="isPresent" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="Yes|No"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="dlcList" type="dlclistType" minOccurs="0" maxOccurs="1" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="formatType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="YYYY/MM/DD" />
+            <xs:enumeration value="MM/DD/YYYY" />
+            <xs:enumeration value="DD/MM/YYYY" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="dlclistType">
+        <xs:sequence>
+            <xs:element name="title" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="date" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:short">
+                                        <xs:minInclusive value="2000" />
+                                        <xs:maxInclusive value="2025" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
     <xs:simpleType name="shortString">
         <xs:restriction base="xs:string">
-            <xs:minLength value="1" />
+            <xs:minLength value="0" />
             <xs:maxLength value="30" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="longString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="30" />
+            <xs:maxLength value="8000" />
         </xs:restriction>
     </xs:simpleType>
 
