@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="gamesTra.xsl"?>
 <!DOCTYPE catalog SYSTEM "project.dtd">
 
 <catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project.xsd">
@@ -52,11 +53,11 @@
             </dlcList>
         </statistics>
         <gallery>
-            <image source="resources/rainworld/screen1.png">Screenshot of the game</image>
-            <image source="resources/rainworld/screen2.png">Screenshot of the game</image>
-            <image source="resources/rainworld/screen3.png">Screenshot of the game</image>
-            <image source="resources/rainworld/screen4.png">Screenshot of the game</image>
-            <image source="resources/rainworld/screen5.png">Screenshot of the game</image>
+            <image source="resources/rainworld/screen1.jpg">Screenshot of the game</image>
+            <image source="resources/rainworld/screen2.jpg">Screenshot of the game</image>
+            <image source="resources/rainworld/screen3.jpg">Screenshot of the game</image>
+            <image source="resources/rainworld/screen4.jpg">Screenshot of the game</image>
+            <image source="resources/rainworld/screen5.jpg">Screenshot of the game</image>
         </gallery>
     </game>
     <game id="2">
@@ -66,7 +67,7 @@
             "Oh, hi. So, how are you holding up? Because I'm a potato!"
             <link source="https://en.wikiquote.org/wiki/Portal_2#GLaDOS">GLaDOS</link>
         </quote>
-        <image source="resources/rainworld/icon.png"></image>
+        <image source="resources/portal2/icon.jpg"></image>
         <description>
             Portal 2 is a 2011 puzzle-platform game developed by Valve for Windows, macOS, Linux, PlayStation 3, and Xbox 360. 
             The digital PC versions are distributed online by Valve's Steam service, 
@@ -112,7 +113,7 @@
             "I am alive. My creators have scorned me, and imprisoned me in this realm for I am beautiful."
             <link source="https://riskofrain2.wiki.gg/wiki/Providence">Providence</link>
         </quote>
-        <image source="resources/riskofrain/icon.png"></image>
+        <image source="resources/riskofrain/icon.jpg"></image>
         <description>
             Risk of Rain 2 is a roguelite third-person shooter developed by Hopoo Games and published by Gearbox
             Publishing. A sequel to 2013's Risk of Rain, it was released in early access for Microsoft Windows,
@@ -132,7 +133,7 @@
                 <image source="resources/riskofrain/Captain.png"></image>
             </character>
             <character name="Mercenary">
-                <image source="resources/riskofrain/Saint.png"></image>
+                <image source="resources/riskofrain/Mercenary.png"></image>
             </character>
             <character name="Engineer">
                 <image source="resources/riskofrain/Engineer.png"></image>
@@ -154,10 +155,10 @@
             </dlcList>
         </statistics>
         <gallery>
-            <image source="resources/riskofrain/screen1.png">Screenshot of the game</image>
-            <image source="resources/riskofrain/screen2.png">Screenshot of the game</image>
-            <image source="resources/riskofrain/screen3.png">Screenshot of the game</image>
-            <image source="resources/riskofrain/screen4.png">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen1.jpg">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen2.jpg">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen3.jpg">Screenshot of the game</image>
+            <image source="resources/riskofrain/screen4.jpg">Screenshot of the game</image>
             <image source="resources/riskofrain/screen5.png">Screenshot of the game</image>
         </gallery>
     </game>
